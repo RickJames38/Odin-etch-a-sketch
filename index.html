@@ -12,15 +12,17 @@
       <div class="tittle">
         <h1>Sketch Pad</h1>
       </div>
+      <div class="mode">Mode: Coloring</div>
       <div class="content">
         <div class="board"></div>
         <div class="buttons">
-          <button>Black</button>
-          <button>White</button>
-          <button>Random</button>
-          <button>Reset</button>
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('white')">Erasor</button>
+          <button onclick="changeColor('gray')">Gray</button>
+          <button onclick="changeColor('random')">Random</button>
+          <button onclick="resetBoard()">Reset</button>
         </div>
-        <div>
+        <div class="input">
           <input
             type="text"
             placeholder="Size of Board"
@@ -29,6 +31,7 @@
           />
           <button>Set Size</button>
         </div>
+        <div class="error">Input must be between 2 and 100</div>
       </div>
     </div>
   </body>
