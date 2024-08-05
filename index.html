@@ -14,13 +14,17 @@
       </div>
       <div class="mode">Mode: Coloring</div>
       <div class="content">
-        <div class="board"></div>
+        <div class="board-border">
+          <div class="board"></div>
+        </div>
         <div class="buttons">
-          <button onclick="changeColor('black')">Black</button>
-          <button onclick="changeColor('white')">Erasor</button>
-          <button onclick="changeColor('gray')">Gray</button>
-          <button onclick="changeColor('random')">Random</button>
-          <button onclick="resetBoard()">Reset</button>
+          <button id="black-but" onclick="changeColor('black')">Black</button>
+          <button id="gray-but" onclick="changeColor('#9E9E9E')">Erasor</button>
+          <button id="white-but" onclick="changeColor('white')">White</button>
+          <button id="colorful-but" onclick="changeColor('random')">
+            Random
+          </button>
+          <button id="reset-but" onclick="resetBoard()">Reset</button>
         </div>
         <div class="input">
           <input
