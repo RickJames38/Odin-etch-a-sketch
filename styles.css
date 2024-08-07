@@ -118,7 +118,7 @@ button:hover {
 
 .input {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 10px;
@@ -137,6 +137,11 @@ button:hover {
   font-style: normal;
 }
 
+.input-box::placeholder {
+  font-size: 16px;
+  text-align: center;
+}
+
 .size:hover {
   background-color: black;
   color: white;
@@ -144,12 +149,19 @@ button:hover {
 }
 
 .error {
-  color: white;
+  color: black;
   background-color: red;
   padding: 10px;
-  border: 3px solid yellow;
+  border: 3px solid black;
   border-radius: 20px;
   font-family: "Kelly Slab", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
+  width: 200px;
+}
+
+.error-con {
+  display: flex;
+  justify-content: center;
 }
